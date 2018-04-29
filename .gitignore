@@ -1,4 +1,5 @@
 .ipynb_checkpoints/
 transfer-results.csv
-lan-results.csv
+eth0-results.csv
+wlan1-results.csv
 *~
