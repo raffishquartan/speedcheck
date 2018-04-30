@@ -23,7 +23,8 @@ time).
   - Configure cron jobs, mine look like this:
     ````
     */5 * * * * /home/pi/.local/bin/speedtest-cli --timeout 60 --csv >> /home/pi/speedcheck/transfer-results.csv
-    3,8,13,18,23,28,33,38,43,48,53,58 * * * * /home/pi/speedcheck/check-lan.sh
+    */5 * * * * /home/pi/speedcheck/check-eth0.sh
+    */5 * * * * /home/pi/speedcheck/check-wlan1.sh
     ````
 - Wait for data to accumulate on the pi (approx 50kb disk use / day)
 - Customise the scripts (e.g. pi IP is hardcoded to 192.168.1.14)
